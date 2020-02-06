@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('init' , 'masterController@viewLanding');
+Route::post('create' , 'masterController@saveData');
+Route::get('record' , 'masterController@retrieveData');
+
